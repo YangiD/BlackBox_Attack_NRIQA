@@ -325,10 +325,10 @@ def main():
     }
     
     path = {
-        'live': '/old_home/yangchenxi/DataSet/LIVE/', #os.path.join('dataset','databaserelease2'),
+        'live': os.path.join('dataset','databaserelease2'),
         'csiq': os.path.join('dataset','CSIQ'),
         'tid2013': os.path.join('dataset','TID2013'),
-        'livec': '/old_home/yangchenxi/DataSet/CLIVE/ChallengeDB_release', #os.path.join('dataset','ChallengeDB_release'),
+        'livec': os.path.join('dataset','ChallengeDB_release'),
         'mlive': os.path.join('dataset','LIVEmultidistortiondatabase'),
         'fc_model': os.path.join('fc_models'),
         'scnn_root': os.path.join('pretrained_scnn','scnn.pkl'),
