@@ -100,10 +100,7 @@ if __name__ == "__main__":
 
     im_edges = []
     im_sals = []
-    # imgpath = '/home/ycx/program/RobustIQA/attack_example/LIVE_crop_badpred_dbcnn/fastfading/img106_original_gt67.1.jpg'
-    imgpath = '/home/ycx/program/RobustIQA/attack_example/LIVE_crop_goodpred_dbcnn/jp2k/img91_original_gt41.8.jpg'
-    # imgpath = './dataset/LIVE_crop_goodpred_dbcnn/jp2k/img91_original_gt41.8.jpg'
-    # imgpath = './dataset/LIVE_crop_badpred_dbcnn/fastfading/img106_original_gt67.1.jpg'
+    imgpath = './dataset/LIVE_crop_goodpred_dbcnn/jp2k/img91_original_gt41.8.jpg'
     im = pil_loader(imgpath)
 
     # Edge
