@@ -344,26 +344,23 @@ def main():
         # index = [i-1 for i in index]
 
         import h5py
-        datainfo = h5py.File('/old_home/yangchenxi/DataSet/LIVE/LIVEINFO.mat','r')
+        datainfo = h5py.File('../../dataset/LIVEINFO.mat','r') #Your path to LIVEINFO.mat
         random_list = datainfo['index']
         index = random_list[:,options['expid']]
         index = [int(i-1) for i in index]
 
-    elif options['dataset'] == 'csiq':
-        index = list(range(0,30))
-    elif options['dataset'] == 'tid2013':   
-        index = list(range(0,25))
-    elif options['dataset'] == 'mlive':
-        index = list(range(0,15))  
-    elif options['dataset'] == 'livec':
-        # index = list(range(0,1162))
-        # with open("/home/ycx/program/RobustIQA/hyperIQA/CLIVE_traintest_index.pkl", "rb") as f:
-        #     index = pickle.load(f)
-        import h5py
-        datainfo = h5py.File('/old_home/yangchenxi/DataSet/CLIVE/ChallengeDB_release/Data/CLIVEinfo.mat','r')
-        random_list = datainfo['index']
-        index = random_list[:,options['expid']]
-        index = [int(i-1) for i in index]
+    # elif options['dataset'] == 'csiq':
+    #     index = list(range(0,30))
+    # elif options['dataset'] == 'tid2013':   
+    #     index = list(range(0,25))
+    # elif options['dataset'] == 'mlive':
+    #     index = list(range(0,15))  
+    # elif options['dataset'] == 'livec':
+    #     import h5py
+    #     datainfo = h5py.File('./CLIVEinfo.mat','r')
+    #     random_list = datainfo['index']
+    #     index = random_list[:,options['expid']]
+    #     index = [int(i-1) for i in index]
     
     
     lr_backup = options['base_lr']
