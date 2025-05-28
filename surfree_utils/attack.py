@@ -44,8 +44,8 @@ def get_init_with_noise(model, X, y, X_ori=None, max_MOS=None, ref=None, \
             # print('Specific ref of each one in get_init_with_noise.')
         else:
             random_ref = True
-            scale = 0.1
             # print('{} ref in get_init_with_noise.'.format(len(ref)))
+        scale = 0.1
     else:
         raise NotImplementedError
 
